@@ -1,11 +1,9 @@
-# This script holds the definition of the book class.
-# This class is used to hold information of a book in memory and used to
-# print the information for the book.
+# This file contains the classes used for the library console.
 class Book():
 
     """
         Book is a class for the storage, manipulation, and presentation
-        of books in the cpcLibrary interface.
+        of books in the Library interface.
 
     """
 

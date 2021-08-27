@@ -83,7 +83,7 @@ class daHomeScreen():
                 print(z*15 + "This is not an allowed option. Please enter one of the options above.")
 
         self.option = user_option
-        
+
         return user_option
 
     def continue_program(self):

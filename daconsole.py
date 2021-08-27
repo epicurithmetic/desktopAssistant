@@ -4,8 +4,8 @@
 import os
 
 # Code for the homescreen.
-from dahome import daHomeScreen
-from dahome import daClose
+from daclasses import daHomeScreen
+from daclasses import daClose
 
 # Import the _main() functions for each part of the assistant.
 from map.mconsole import map_main
