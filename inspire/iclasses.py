@@ -1,0 +1,1 @@
+# Classes for inspiration module
