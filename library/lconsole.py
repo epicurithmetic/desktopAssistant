@@ -2,9 +2,10 @@
 
 # Import some functions from auxillary modules.
 import os
-from library.commandLineBooks import bookShelf
-from library.lclasses import lHomeScreen
 from library.lclasses import lClose
+from library.lclasses import lHomeScreen
+from library.commandLineBooks import bookShelf
+
 
 def library_main():
 

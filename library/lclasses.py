@@ -111,7 +111,7 @@ class lHomeScreen():
         print(explanation_message_2)
         print(explanation_message_3)
         print(w)
-        
+
     def options(self):
 
         """
@@ -181,7 +181,7 @@ class lClose():
         z = " "
         w = "\n"
 
-        exit_message = " Thank you for visiting the C.P.C Library."
+        exit_message = " Thank you for visiting the Library."
         l_exit = len(exit_message)
 
         print(x + 170*y + x)
@@ -195,7 +195,7 @@ class lClose():
 
         """
             This method is used to determine whether or not the user is finished
-            and hence that the MAP console should close.
+            and hence that the library console should close.
         """
 
         return False
