@@ -2,8 +2,19 @@
 
 # Import some functions from auxillary modules.
 import os
+import platform
 from planner.dclasses import dClose
 from planner.dclasses import dHomeScreen
+
+# One function to clear the console, irregardless of platform (Linux/Windows)
+def clearConsole():
+
+    opsys = platform.system()
+
+    if opsys == "Linux":
+        return os.system("clear")
+    else:
+        return os.system("cls")
 
 def planner_main():
     # The user will be presented with the HomeScreen to start.
@@ -11,7 +22,7 @@ def planner_main():
 
     while planner_state.continue_program() == True:
 
-        os.system('clear')
+        clearConsole()
 
         planner_state.header()
         planner_state.explanation()

@@ -2,6 +2,7 @@
 
 # Some os calls need to be made in order clear console.
 import os
+import platform
 
 # Code for the homescreen.
 from daclasses import daHomeScreen
@@ -17,6 +18,18 @@ from planner.dconsole import planner_main
 from inspire.iconsole import inspire_main
 from projects.pconsole import projects_main
 
+# One function to clear the console, irregardless of platform (Linux/Windows)
+def clearConsole():
+
+    opsys = platform.system()
+
+    if opsys == "Linux":
+        return os.system("clear")
+    else:
+        return os.system("cls")
+
+
+
 if __name__ == "__main__":
 
     # Load the user into the desktop assistant homescreen.
@@ -27,7 +40,7 @@ if __name__ == "__main__":
         # The entire console runs within this loop. It will stop when the
         # user has chosen the class close() and hence user.continue == False.
 
-        os.system("clear")
+        clearConsole()
 
         # Print the landing screen information for a given class.
 
@@ -82,5 +95,5 @@ if __name__ == "__main__":
             user_state = daClose()
 
     # Outside primary loop. Program is closing.
-    os.system('clear')
+    clearConsole()
     print("Laterz")

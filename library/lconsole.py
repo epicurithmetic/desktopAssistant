@@ -2,10 +2,20 @@
 
 # Import some functions from auxillary modules.
 import os
+import platform
 from library.lclasses import lClose
 from library.lclasses import lHomeScreen
 from library.commandLineBooks import bookShelf
 
+# One function to clear the console, irregardless of platform (Linux/Windows)
+def clearConsole():
+
+    opsys = platform.system()
+
+    if opsys == "Linux":
+        return os.system("clear")
+    else:
+        return os.system("cls")
 
 def library_main():
 
@@ -14,7 +24,7 @@ def library_main():
 
     while library_state.continue_program() == True:
 
-        os.system('clear')
+        clearConsole()
 
         library_state.header()
         library_state.explanation()
