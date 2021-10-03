@@ -22,6 +22,7 @@ def insertTask(conn):
 
         task_name = input("Task name: ")
         task_parent = input("Parent task [Top/number]: ")
+        # Future Rob - you need to add the subtask placement features here. 
         task_complete = input("Is the task complete? [Y/n]: ")
 
         task_check = input("Is this information correct? [Y/n]: ")
