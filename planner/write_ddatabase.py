@@ -9,7 +9,7 @@ def insertTask(conn):
         This method lets the user input a task into the daily planner
         database. Prompting them for: title, parent task, and completion.
 
-        Note: the data section will be inserted automatically.
+        Note: the date section will be inserted automatically.
 
     """
 
@@ -22,7 +22,7 @@ def insertTask(conn):
 
         task_name = input("Task name: ")
         task_parent = input("Parent task [Top/number]: ")
-        # Future Rob - you need to add the subtask placement features here. 
+        # Future Rob - you need to add the subtask placement features here.
         task_complete = input("Is the task complete? [Y/n]: ")
 
         task_check = input("Is this information correct? [Y/n]: ")
