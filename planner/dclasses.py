@@ -37,7 +37,7 @@ class dHomeScreen():
         print(z*65 + x + welcome_message + x)
         print(z*65 + x + l_welcome*y + x)
         print(w)
-        
+
 
     def explanation(self):
 
@@ -77,11 +77,11 @@ class dHomeScreen():
 
         prompt = "Which of the following options would you like to perform?"
 
-        option_1 = "[C]: Complete task e.g. ct2.1.2"
-        option_2 = "[A]: Add task"
-        option_3 = "[R]: Remove task e.g. rt2.1"
-        option_4 = "[N]: New day refresh"
-        option_5 = "[Q]: Quit the daily planner console."
+        option_1 = "To add a task enter: atx.y.z"
+        option_2 = "To remove a task enter: rtx.y.z"
+        option_3 = "To mark a task complete enter: ctx.y.z"
+        option_4 = "To reset enter: reset"
+        option_5 = "To quit the planner enter: Q"
 
         options = [option_1,
                    option_2,
