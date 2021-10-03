@@ -13,6 +13,8 @@ def insertTask(conn):
 
     """
 
+    # CHANGES REQUIRED: Database structure has been changed. More infomration need to write to .db
+
     task_name = ""
     task_parent = ""
     task_complete = ""
