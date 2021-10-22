@@ -4,8 +4,9 @@
 import os
 import re
 import platform
-from planner.dclasses import dClose
-from planner.dclasses import dHomeScreen
+from dclasses import dClose
+from dclasses import dHomeScreen
+from print_ddatabase import printDailyTasks
 
 # One function to clear the console, irregardless of platform (Linux/Windows)
 def clearConsole():
