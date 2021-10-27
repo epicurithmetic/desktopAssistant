@@ -2,7 +2,7 @@
 # In particular we want each subtask layer to have identation and either [ ] or [X]
 # to distinguish complete from incomplete tasks.
 
-from read_ddatabase import dTaskSubtaskStructure
+from planner.read_ddatabase import dTaskSubtaskStructure
 
 
 def printDailyTasks():

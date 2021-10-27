@@ -23,7 +23,7 @@ def dPrimaryTasks():
 
     """
 
-    conn_ddatabase = sqlite3.connect("ddatabase.db")
+    conn_ddatabase = sqlite3.connect("planner/ddatabase.db")
 
     sql_primaryTasks = "SELECT title FROM planner WHERE subtask = 'n';"
 
@@ -55,7 +55,7 @@ def dPrimaryTasks():
 def dTaskSubtaskStructure():
 
 
-    conn_ddatabase = sqlite3.connect("ddatabase.db")
+    conn_ddatabase = sqlite3.connect("planner/ddatabase.db")
 
     primaryWithNumbers = dPrimaryTasks()
 
